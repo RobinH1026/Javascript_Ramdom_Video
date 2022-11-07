@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html style="width: 100%; height: 100%">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <meta charset="utf-8" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            border: none;
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div style="width: 100%; height: 100%;">
+        <script src="https://cdn.00px.net/static/s3hBf8Sv2Qnv4vCG.js"></script>
+        <script>
+            (function () {
+                // A dimensão do player será automaticamente o do elemento pai
+                // eyJjciI6NzEwNjEsImNhIjo0MjI3LCJwbCI6NTQ1NDZ9
+                //eyJjciI6MTEyMTc1LCJjYSI6NTA2MywicGwiOjgzOTU5fQ
+                var random = Math.random(1);
+                var rand=Math.floor(random*10)%2;
+                console.log(Math.floor(random*10)%2);
+                if(rand==0){
+                    new VideoPlayer().initAd("eyJjciI6NzEwNjEsImNhIjo0MjI3LCJwbCI6NTQ1NDZ9", {
+                        autoplay: true,
+                        showControls: true, // mostrar barra de navegacao e contador
+                        noClick: true, // desabilitar clicks
+                        muted: true, // se o video deve ser inicializado mutado
+                        skip: false, // tempo para o 'Pular anúncio'. skip: false para ocultar
+                    //  noClick: false // adiciona o botao saiba mais
+                    }, function () {
+                        console.log('Vídeo exibido ou pulado.');
+                        location.href = "https://glad-yarn-3460.glideapp.io/";
+                    });
+                }
+                else{
+                    new VideoPlayer().initAd("eyJjciI6MTEyMTc1LCJjYSI6NTA2MywicGwiOjgzOTU5fQ", {
+                        autoplay: true,
+                        showControls: true, // mostrar barra de navegacao e contador
+                        noClick: true, // desabilitar clicks
+                        muted: true, // se o video deve ser inicializado mutado
+                        skip: false, // tempo para o 'Pular anúncio'. skip: false para ocultar
+                    //  noClick: false // adiciona o botao saiba mais
+                    }, function () {
+                        console.log('Vídeo exibido ou pulado.');
+                        location.href = "https://glad-yarn-3460.glideapp.io/";
+                    });
+                }
+            })();
+        </script>
+    </div>
+</body>
+</html>
